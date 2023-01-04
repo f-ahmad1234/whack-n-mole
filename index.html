@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack a mole Game</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+  </head>
+  <body>
+    <main class="main">
+       <h1>Whack a mole </h1>
+        <select name="difficulty" class="difficulty">
+            <option value="easy" disabled selected>Choose level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+     <div class="score-timeLeft-container">
+      <h3>Time:<span class="decreasTime">10</span>sec</h3>
+      <h3>Score:<span class="score">0</span></h3>
+     </div>
+      
+        <h3 class="over"></h3>
+        <div id="grid">
+            <div id="1"  class="square"></div>
+            <div id="2"  class="square"></div>
+            <div id="3"  class="square"></div>
+            <div id="4"  class="square"></div>
+            <div id="5"  class="square"></div>
+            <div id="6"  class="square"></div>
+            <div id="7"  class="square"></div>
+            <div id="8"  class="square"></div>
+            <div id="9"  class="square"></div>
+          </div>
+          <div class="button">
+            <button class="start">start</button>
+            <button class="reset">Reset</button>
+           </div>
+    </main>
+ <script src="./script.js"></script>
+  </body>
+</html>
